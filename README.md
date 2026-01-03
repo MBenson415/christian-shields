@@ -1,7 +1,7 @@
-# Christian Shields Copy
+# Christian Shields on react-js and Azure Static Web App
 
-This is a copy of the Christian Shields website, built with React (Vite) and Azure Static Web Apps.
-It integrates with Stripe to list products and handle checkout.
+This is the  Christian Shields website, built with React (Vite) and Azure Static Web Apps.
+It integrates with Stripe to list products and handle checkout, uses Bandsintown API for event feed, and manages member features using Azure SQL Server backend.
 
 ## Prerequisites
 
@@ -41,14 +41,22 @@ It integrates with Stripe to list products and handle checkout.
 Deploy to Azure Static Web Apps using the Azure CLI or GitHub Actions.
 Ensure the `api_location` is set to `api` and `app_location` is set to `/`.
 
+Development site prior to DNS transfer is available at [https://red-meadow-05ef5440f.6.azurestaticapps.net](https://red-meadow-05ef5440f.6.azurestaticapps.net).
+
 ## To do
 
-1. Implement Stripe store and checkout session
+[X] Replicate Squarespace styling
 
-2. Member sign-up and login
+[X] New Subscriber component
 
-3. Backend: Check membership status
+[X] Implement BandsInTown API event feed on front page
 
-4. Separate store for members only (free shipping)
+[X] Implement Stripe Products and checkout session
 
-5. Implement BandsInTown API event feed on front page
+[ ] Implement Cart
+
+[ ] Member sign-up and login
+
+[ ] Backend: Check membership status
+
+[ ] Separate store for members only (free shipping)
