@@ -46,3 +46,15 @@ It integrates with Stripe to list products and handle checkout.
 
 Deploy to Azure Static Web Apps using the Azure CLI or GitHub Actions.
 Ensure the `api_location` is set to `api` and `app_location` is set to `/`.
+
+## To do
+
+1. Implement Stripe store and checkout session
+
+2. Member sign-up and login
+
+3. Backend: Check membership status
+
+4. Separate store for members only (free shipping)
+
+5. Implement BandsInTown API event feed on front page
