@@ -1,0 +1,51 @@
+.home {
+  text-align: center;
+  color: #fff;
+}
+
+.hero {
+  padding: 100px 20px;
+  background-color: #111;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.upcoming-shows {
+  background-color: #000;
+}
+
+.subscribe {
+  background-color: #111;
+}
+
+.join-nation {
+  background-color: #000;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
