@@ -1,0 +1,14 @@
+.tour-page {
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  min-height: 60vh;
+}
+
+.tour-page h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
+}

@@ -1,0 +1,51 @@
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-page h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+  color: #8A2BE2; /* Purple */
+  text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+}
+
+.not-found-page h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin: 10px 0 20px;
+  letter-spacing: 2px;
+}
+
+.not-found-page p {
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.not-found-page .home-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.not-found-page .home-link:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}

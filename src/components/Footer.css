@@ -15,13 +15,16 @@
 }
 
 .social-links a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
+  transition: filter 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
+  color: #fff;
+  filter: drop-shadow(0 0 8px rgba(138, 43, 226, 1)) drop-shadow(0 0 16px rgba(138, 43, 226, 1)) drop-shadow(0 0 24px rgba(138, 43, 226, 1));
 }
 
 .copyright {

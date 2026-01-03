@@ -1,16 +1,54 @@
-# React + Vite
+# Christian Shields Copy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a copy of the Christian Shields website, built with React (Vite) and Azure Static Web Apps.
+It integrates with Stripe to list products and handle checkout.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js
+- Azure Functions Core Tools (for running the API locally)
+- Stripe Account (Publishable and Secret keys)
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  Install dependencies for the client:
+    ```bash
+    npm install
+    ```
 
-## Expanding the ESLint configuration
+2.  Install dependencies for the API:
+    ```bash
+    cd api
+    npm install
+    cd ..
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  Configure Stripe keys:
+    - The `api/local.settings.json` file is already configured with the provided secret key for local development.
+    - For production (Azure Static Web Apps), add `STRIPE_SECRET_KEY` as an application setting in the Azure portal manually.
+
+## Running Locally
+
+1.  Start both the Client and API with a single command:
+    ```bash
+    npm start
+    ```
+
+2.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Deployment
+
+Deploy to Azure Static Web Apps using the Azure CLI or GitHub Actions.
+Ensure the `api_location` is set to `api` and `app_location` is set to `/`.
+
+## To do
+
+1. Implement Stripe store and checkout session
+
+2. Member sign-up and login
+
+3. Backend: Check membership status
+
+4. Separate store for members only (free shipping)
+
+5. Implement BandsInTown API event feed on front page

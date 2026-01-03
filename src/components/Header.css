@@ -1,47 +1,100 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: #000;
   color: #fff;
+  gap: 20px;
 }
 
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
+.logo-image {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.logo-image:hover {
+  filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.6)); /* Subtle purple glow */
 }
 
 .header nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header nav a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem; /* Increased size for Rama Gothic E */
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
 .header nav a:hover {
-  color: #ccc;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 1), 0 0 16px rgba(138, 43, 226, 1), 0 0 24px rgba(138, 43, 226, 1);
 }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .header nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem; /* Increased size for Rama Gothic E */
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-trigger:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 1), 0 0 16px rgba(138, 43, 226, 1), 0 0 24px rgba(138, 43, 226, 1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Space Mono', monospace; /* Dropdown items should be Space Mono */
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
