@@ -35,13 +35,13 @@ function TheBand() {
       <div className="members-grid">
         {members.map((member, index) => (
           <div key={index} className="member-card">
-            <div className="member-image-container">
-                <img src={member.image} alt={member.name} className="member-image" />
-            </div>
             <div className="member-info">
               <h2>{member.name}</h2>
               <h3>{member.role}</h3>
               <p>{member.description}</p>
+            </div>
+            <div className="member-image-container">
+                <img src={member.image} alt={member.name} className="member-image" />
             </div>
           </div>
         ))}
