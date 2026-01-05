@@ -53,10 +53,16 @@ Development site prior to DNS transfer is available at [https://red-meadow-05ef5
 
 [X] Implement Stripe Products and checkout session
 
-[ ] Implement Cart
+[X] Implement Cart
 
-[ ] Member sign-up and login
+[ ] Implement Contact page
 
-[ ] Backend: Check membership status
+[ ] Style tour feed
+
+[X] Member sign-up and login
+
+[X] Backend: Check membership status
 
 [ ] Separate store for members only (free shipping)
+
+[X] About page with members, pictures, and description

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 import './Header.css';
 
 function Header() {
+  const { cartCount } = useCart();
+
   return (
     <header className="header">
       <div className="logo">
@@ -28,11 +31,13 @@ function Header() {
             </div>
           </li>
           <li><a href="https://youtube.com/christianshields" target="_blank" rel="noopener noreferrer">VIDEO</a></li>
+          <li><Link to="/the-band">THE BAND</Link></li>
           <li><Link to="/tour">TOUR</Link></li>
-          <li><Link to="/store">STORE</Link></li>
-          <li><Link to="/contact">CONTACT</Link></li>
           <li><Link to="/subscribe">SUBSCRIBE</Link></li>
-          <li><a href="https://patreon.com/ChristianShields" target="_blank" rel="noopener noreferrer">PATREON</a></li>
+          <li><Link to="/contact">CONTACT</Link></li>
+          <li><Link to="/store">STORE</Link></li>
+          <li><Link to="/cart">CART ({cartCount})</Link></li>
+          <li><Link to="/members-only">MEMBERS</Link></li>
         </ul>
       </nav>
     </header>

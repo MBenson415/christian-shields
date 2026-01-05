@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.3",
     "mssql": "^12.2.0",
+    "nodemailer": "^7.0.12",
     "stripe": "^14.0.0"
   }
 }

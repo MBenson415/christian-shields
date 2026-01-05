@@ -1,0 +1,76 @@
+.the-band-page {
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.the-band-page h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+}
+
+.members-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 0; /* Reset padding if needed, or keep it */
+}
+
+.member-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.member-card:nth-child(even) .member-info {
+    text-align: right;
+}
+
+.member-image-container {
+    flex: 0 0 400px; /* Fixed width for image side */
+    height: 500px; /* Taller portrait height */
+    background-color: #333;
+    overflow: hidden;
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.member-info h2 {
+    color: #8A2BE2;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.member-info h3 {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.member-info p {
+    font-size: 1.1rem; /* Medium font size */
+    line-height: 1.6;
+    color: #ddd;
+}
