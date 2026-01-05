@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import './Header.css';
 
 function Header() {
   const { cartCount } = useCart();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="header">
@@ -13,9 +18,15 @@ function Header() {
           <img src="https://squarespacemusic.blob.core.windows.net/$web/christianshields.png" alt="Christian Shields" className="logo-image" />
         </Link>
       </div>
-      <nav>
+      
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+      </div>
+
+      <nav className={isMenuOpen ? 'nav-open' : ''}>
         <ul>
-          <li><Link to="/">HOME</Link></li>
           <li className="dropdown">
             <span className="dropdown-trigger">MUSIC</span>
             <div className="dropdown-content">

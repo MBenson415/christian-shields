@@ -123,3 +123,9 @@
   font-family: 'Space Mono', monospace;
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .contact-page h1 {
+    font-size: 2.5rem;
+  }
+}

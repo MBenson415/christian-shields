@@ -74,3 +74,38 @@
     line-height: 1.6;
     color: #ddd;
 }
+
+@media (max-width: 768px) {
+    .the-band-page h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .members-grid {
+        gap: 40px;
+    }
+
+    .member-card, 
+    .member-card:nth-child(even) {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .member-card:nth-child(even) .member-info {
+        text-align: left;
+    }
+
+    .member-image-container {
+        flex: none;
+        width: 100%;
+        height: 400px;
+    }
+
+    .member-info {
+        padding: 30px 20px;
+    }
+
+    .member-info h2 {
+        font-size: 1.5rem;
+    }
+}

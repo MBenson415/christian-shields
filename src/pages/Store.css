@@ -117,3 +117,9 @@
     color: #888;
     font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .store h1 {
+    font-size: 2.5rem;
+  }
+}

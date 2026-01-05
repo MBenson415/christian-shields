@@ -86,7 +86,7 @@
   font-style: italic;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .tour-event {
     flex-direction: column;
     text-align: center;

@@ -7,6 +7,10 @@ function Home() {
   return (
     <div className="home">
       
+      <div className="hero-image-container">
+        <img src="https://squarespacemusic.blob.core.windows.net/$web/full%20band.png" alt="Christian Shields Full Band" className="hero-img" />
+      </div>
+
       <section className="upcoming-shows">
         <h1>UPCOMING SHOWS</h1>
         <TourDates />
