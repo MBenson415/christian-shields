@@ -46,10 +46,10 @@ function Header() {
             </div>
           </li>
           <li><a href="https://youtube.com/christianshields" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>VIDEO</a></li>
-          <li><Link to="/the-band" onClick={closeMenu}>THE BAND</Link></li>
           <li><Link to="/tour" onClick={closeMenu}>TOUR</Link></li>
           <li><Link to="/subscribe" onClick={closeMenu}>SUBSCRIBE</Link></li>
           <li><Link to="/contact" onClick={closeMenu}>CONTACT</Link></li>
+          <li><Link to="/the-band" onClick={closeMenu}>THE BAND</Link></li>
           <li><Link to="/store" onClick={closeMenu}>STORE</Link></li>
           <li><Link to="/cart" onClick={closeMenu}>CART ({cartCount})</Link></li>
           <li><Link to="/members-only" onClick={closeMenu}>MEMBERS</Link></li>
